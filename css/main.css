@@ -1,5 +1,5 @@
 body {
-    background-image: url(background.jpg)
+    background-image: url("background.jpg");
     margin: 60px auto;
     width: 70%;
 }
