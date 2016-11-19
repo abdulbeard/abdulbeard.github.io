@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AbdulBeard"
-date: 11/18/2016
+date: 2016-11-18
 ---
 
 Well. 
