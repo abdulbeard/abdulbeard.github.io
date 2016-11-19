@@ -1,10 +1,10 @@
 body {
-    background-image: url("/background.jpg");
-    margin: 60px auto;
+    background-image: url("/background.jpg") !important;
+    margin: 60px auto !important;
     width: 70%;
 }
 nav ul, footer ul {
-    font-family:'Consolas', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Consolas', 'Helvetica', 'Arial', 'Sans-Serif' !important;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -21,7 +21,7 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Consolas', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Consolas', 'Helvetica', 'Arial', 'Sans-Serif' !important;
 }
 p {
     font-size: 1.5em;
