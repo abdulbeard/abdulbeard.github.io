@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Another markdown test"
+date: 2016-11-19
+---
+
 # H1
 ## H2
 ### H3
