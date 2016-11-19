@@ -4,6 +4,8 @@ title: "Finally on the map"
 date: 2016-11-18
 ---
 
+###### Markdown seems pretty cool so far ######
+
 Well. 
 Finally got around to putting this old website together. 
 Have been romanticizing with the idea for some time now.
