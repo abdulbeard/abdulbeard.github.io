@@ -4,17 +4,18 @@ title: "Another markdown test"
 date: 2016-11-19
 ---
 
-# H1
+# H1 
 hey whatsup
-## H2
+## H2 
 nothing much
-### H3
+### H3 
 just testing out markdown headers
-#### H4
+#### H4 
 really?
-##### H5
+##### H5 
 yeah man, they seem to have some issues
-###### H6
+###### H6 
+whaaaaa?
 
 
 Alternatively, for H1 and H2, an underline-ish style:
