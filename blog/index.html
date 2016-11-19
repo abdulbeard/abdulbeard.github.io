@@ -2,10 +2,27 @@
 layout: default
 title: Archives
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
+	<!--<h1>{{ page.title }}</h1>-->
+	<h2 class="ui icon header">
+		<i class="history icon"></i>
+		<div class="content">
+			{{ page.title }}
+			<div class="sub header">Tales of times long past.</div>
+		</div>
+	</h2>
 
+	<div class="ui inverted segment">
+		<div class="ui inverted relaxed divided huge list">
+			{% for post in site.posts %}
+			<a href="{{ post.url }}" class="item" title="{{ post.title }}">
+				{{ post.date | date_to_string }}__{{ post.title }}
+			</a> 
+			{% endfor %}
+		</div>
+	</div>
+
+	<!--<ul class="posts">
 	  {% for post in site.posts %}
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
-	</ul>
+	</ul>-->

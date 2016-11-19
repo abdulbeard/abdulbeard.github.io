@@ -19,6 +19,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.ui.menu .item {
+    font-size: 2rem !important;
+}
 h1 {
     font-size: 3em;
     font-family:'Consolas', 'Helvetica', 'Arial', 'Sans-Serif' !important;
