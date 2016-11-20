@@ -1,7 +1,7 @@
 body {
     background-image: url("/background.jpg") !important;
     margin: 60px auto !important;
-    width: 70%;
+    width: 95%;
 }
 nav ul, footer ul {
     font-family:'Consolas', 'Helvetica', 'Arial', 'Sans-Serif' !important;

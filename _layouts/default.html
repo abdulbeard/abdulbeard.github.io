@@ -6,19 +6,20 @@
 	<!-- link to main stylesheet -->
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/semantic.min.css">
 	<script src="/semantic/dist/semantic.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="/semantic/dist/button.css">
-	<link rel="stylesheet" type="text/css" href="/semantic/dist/segment.css">
+	<link rel="stylesheet" type="text/css" href="/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/css/segment.css">
+	<link rel="stylesheet" type="text/css" href="/css/menu.css">
 </head>
 
 <body>
 	<div class="ui container">
-	<div class="ui secondary pointing menu">
-		<a class="active item" href="/">Home</a>
-		<a class="item" href="/about">About</a>
-		<a class="item" href="/resume">Resume</a>
-		<a class="item" href="/blog">Blog</a>
+	<div id="navbar_menu" class="ui secondary pointing menu">
+		<a id="home" class="navbar_menu_item active item" href="/">Home</a>
+		<a id="about"class="navbar_menu_item item" href="/about">About</a>
+		<a id="resume"class="navbar_menu_item item" href="/resume">Resume</a>
+		<a id="blog"class="navbar_menu_item item" href="/blog">Blog</a>
 		<div class="right menu">
 			<a class="item" href="mailto:abdulkhaliqzaheer@gmail.com" title="mailto:abdulkhaliqzaheer@gmail.com">
 				<i class="mail square inverted blue large icon"></i>
@@ -41,6 +42,15 @@
 		</ul>-->
 	</footer>
 	</div>
+	<div id="navbarlocation" style="display:none" text="{{ page.navbarlocation }}">{{ page.navbarlocation }}</div>
 </body>
 
 </html>
+<script>
+	$(document).ready(function(){
+		var currLocation = $('#navbarlocation').text();
+		var activeItem = $('#'+currLocation);
+		$(activeItem).addClass('active');
+		$('.navbar_menu_item').not(activeItem).removeClass('active');
+	});
+</script>
