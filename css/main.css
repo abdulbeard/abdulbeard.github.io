@@ -15,6 +15,15 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+.ui.secondary.pointing.menu .right.menu .item{
+    padding:inherit; 
+    padding-top:0.5em;
+}
+.ui.secondary.pointing.menu > .menu > .item.active, 
+.ui.secondary.pointing.menu > .item.active {
+    border-color: rgba(0, 0, 0, 1) !important;
+    color: rgba(0, 0, 0, 1) !important;
+}
 a {
     color: #999;
 }
