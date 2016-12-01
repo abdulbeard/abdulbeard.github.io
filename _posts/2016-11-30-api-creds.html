@@ -1,0 +1,79 @@
+---
+layout: default
+title: Client-side api auth
+navbarlocation: home
+---
+<div class="ui green raised segment">
+	<h1><i class="ui large warning sign icon"></i>{{ page.title }}</h1>
+	<br/	>
+	<p>Been contemplating a problem recently, that concerns client-side usage of an api.
+		We have an api endpoint that is under "attack" by someone malicious.
+		This endpoint is one that we use to "log in" a user, and takes in a username/password, 
+		along with a basic-auth header that contains credentials that are used to authenticate and 
+		authorize one as a valid caller	of that api endpoint.
+	</p>
+	<p>It seems to like our Android app has been decompiled, and 
+		someone seems to have accessed the obfuscated api creds within. Now what they're doing is
+		using those creds, and any combination of username/password to "crack" accounts.
+		Our current conundrum is how to find a way to prevent these "attacks".
+		</p><p>
+		In my searching online, I've found several discussed approaches:
+		There's <a href="https://maxkatz.org/2015/06/10/how-to-keep-rest-api-credentials-secure/">Max Katz's website</a> 
+		that tends to show in the top google results, talking about appery.io.
+		</p><p>
+		Neil <a href="http://masherydev.tumblr.com/post/60374931653/keeping-api-credentials-secure-at-the-application">here</a> 
+		talks about obfuscation, session tokens, bearer-auth and how there's no silver-bullet solution to
+		this problem. How truly secure communication is really only possible in server-server communication.
+		</p><p>
+		There's also a <a href="http://security.stackexchange.com/questions/19930/how-do-i-secure-my-rest-api">post by noob Mama</a>
+		about this same issue, discussing SSL/TLS and OAuth.
+	</p>
+	<p>Then I also thought of how someone like Google handles api authentication and client-side api usage.
+		They obviously have several products that are consumed this way e.g. Google Maps, Google Analytics etc.
+		It seems like smart decisions about api security include things like:
+		<div class="ui list">
+		<div class="item">
+			<i class="map marker icon"></i>
+			<div class="content">
+				<a class="header">Time-sensitive credentials</a>
+				<div class="description">This means that the credentials should be valid only for a specific period of time
+					and should regularly expire, and be renewed. This prevents a potential malicious user from abusing the same
+					token/api key for a long period of time e.g. a week.
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<i class="map marker icon"></i>
+			<div class="content">
+				<a class="header">User-specific credentials</a>
+				<div class="description">This ties an api-key/token to a specific user. You can do this
+					by using their IP address, username, sessionId, or some other unique identifier.
+					 This way, if they're abusing your api, you can
+					rescind just their credentials, and add them to the naughty-list.
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<i class="map marker icon"></i>
+			<div class="content">
+				<a class="header">Trusted Users</a>
+				<div class="description">If you have partners using your api, who aren't end-users/consumers,
+					consider white-listing them, and settling on a standard-operating-procedure for how to
+					consume your api.
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<i class="map marker icon"></i>
+			<div class="content">
+				<a class="header">Datacenter Support</a>
+				<div class="description">Wherever you may host your application, you should have
+					a good relationship with the people who manage and operate your physical infrastructure.
+					This will come in handy for load-balancing, identifying D/Dos attacks and blocking
+					malicious users, come time you're being attacked.
+				</div>
+			</div>
+		</div>
+	</div>
+	</p>
+</div>
