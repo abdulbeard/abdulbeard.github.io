@@ -17,3 +17,57 @@ navbarlocation: home
 		<a href="https://github.com/Shopify/liquid/wiki" style="color:yellow">Liquid.</a>
 	</p>
 </div>
+<div class="ui green raised segment">
+	<h1>What I do</h1>
+	<p>
+		As the lead software engineer on the "Core" team at NCR's Online Ordering team, I work on setting
+		coding standards, while reducing technical debt. My team's job is to set standards for application 
+		design and architecture. We also focus on writing code and libraries for our developers to consume.
+		</p>
+		<p>
+		Examples of such libraries include:
+		<br/>
+		-  A wrapper for operating on a Redis cache through the use of 
+		specially-decorated POCO objects.
+		<br/>
+		-  A simple library that provides the calling code the ability to log items to ElasticSearch with minimal
+		blocking of the app's execution.
+		</p><p>
+		 Some days I find myself knee-deep in custom powershell-jmeter-c# applications. We recently wrote
+		 a load-test application that would would stress an api. This was done by leveraging powershell
+		 remoting, Windows Performance Counters, JMeter test plans and a healthy dose of analysis of the
+		 generated results. We used this to come up with a load-profile of our given stack, and to understand
+		 our bottlenecks. We were also able to predict what kinds of server-configuration and footprint we'd 
+		 need for upcoming, projected loads.
+		 </p><p>
+			 We have had the chance to use several tools to aid us in our mission. Jetbrains Resharper, DotTrace
+			 and DotCover have been very helpful to us. Resharper helps set coding standards, naming conventions
+			 and general code-health metrics and aesthetics. DotTrace helps us analyze performance bottlenecks,
+			 inefficencies, and helps validate the value of our refactoring of the code.
+			 DotCover has been monumental in helping us identify areas of poor unit-test coverage in our 
+			 application, and really doing TestDrivenDevelopment.
+		  </p><p>
+		  Our application architecture is a fairly typical one, with a webserver layer, that communicates
+		  with a layer of application servers, who in turn leverage a MSSQL database for persistence.
+		  The webservers are light business-logic, light computation, and mostly presentation and application
+		  flow. The appsevers do the heavy lifting i.e. 3rd party communication, business logic, data access
+		  and persistence management.
+		  One of our legacy features was the use of WCF (Windows Communication Foundation) betwen the website
+		  and app servers. This was XML SOAP, not very customizable, and brittle with few people knowing 
+		  how to fix/diagnose issues with it. I and my team championed our move off of this old, inefficient
+		  technology, onto the sleek, fast WebApi in .NET. We were able to inject diagnostic headers,
+		  use faster serialization and smaller payloads (Protobuf vs xml soap), and increase our throughput.
+		  We ended up refactoring about 800+ instances of code usage, which helped us tremendously.
+		  </p><p>
+		   Sometimes, work means putting my who-broke-this hat on, and determining why some application
+		    threads are deadlocking, or instead designing a thin, application-specific data-access
+			 layer on top of a micro-ORM, like Dapper. 
+			 Or sometimes it's just refactoring front-end assets to be served from a CDN instead, 
+			 relieving application traffic by 75%. 
+		My delightful days at work are identifying potential and existing problems, coming up with a solution, 
+		rapid-prototyping to a minimal proof-of-concept and then debating pros and cons.
+		My primary goal is learning more about application architecture and design first-hand, 
+		and from other folks' wisdom and mistakes.
+		I've been reading books on application architecture, and must say I'm fascinated and having fun.
+	</p>
+</div>

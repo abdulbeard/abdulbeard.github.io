@@ -2,6 +2,7 @@
 layout: post
 title: "Another markdown test"
 date: 2016-11-19
+navbarlocation: blog
 ---
 
 # H1 

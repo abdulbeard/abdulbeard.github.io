@@ -2,6 +2,7 @@
 layout: post
 title: "Finally on the map"
 date: 2016-11-18
+navbarlocation: blog
 ---
 
 ###### Markdown seems pretty cool so far
