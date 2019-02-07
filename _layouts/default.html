@@ -4,7 +4,8 @@
 <head>
 	<title>{{ page.title }}</title>
 	<!-- link to main stylesheet -->
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
+	<link rel="stylesheet" href="/css/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="/css/semantic.min.css">
 	<script src="/semantic/dist/semantic.min.js"></script>
@@ -15,58 +16,55 @@
 </head>
 
 <body>
-	<div class="ui container">
-	<div id="navbar_menu" class="ui secondary pointing menu">
-		<a id="home" class="navbar_menu_item active item" href="/">
-			<i class="home inverted black large icon"></i>
-		</a>
-		<a id="about" class="navbar_menu_item item" href="/about"><b>About</b></a>
-		<a id="resume" class="navbar_menu_item item" href="/resume">Resume</a>
-		<a id="blog" class="navbar_menu_item item" href="/blog">Blog</a>
-		<div class="right menu">
-			<a class="item" href="mailto:abdulkhaliqzaheer@gmail.com" title="mailto:abdulkhaliqzaheer@gmail.com">
-				<i class="mail square inverted blue large icon"></i>
-			</a>
-			<a class="item" href="https://github.com/abdulbeard">
-				<i class="github square inverted green large icon"></i>
-			</a>
-		</div>
-	</div>
-	<!--<div id="navbar_menu" class="ui secondary pointing menu">
-		<a id="home" class="navbar_menu_item active item" href="/">Home</a>
-		<a id="about"class="navbar_menu_item item" href="/about">About</a>
-		<a id="resume"class="navbar_menu_item item" href="/resume">Resume</a>
-		<a id="blog"class="navbar_menu_item item" href="/blog">Blog</a>
-		<div class="right menu">
-			<a class="item" href="mailto:abdulkhaliqzaheer@gmail.com" title="mailto:abdulkhaliqzaheer@gmail.com">
-				<i class="mail square inverted blue large icon"></i>
-			</a>
-			<a class="item" href="https://github.com/abdulbeard">
-				<i class="github square inverted green large icon"></i>
-			</a>
-		</div>
-	</div>-->
-	<div class="ui container">
+	<div class="bodyContent">
+		<div class="nonfooter-wrapper">
+			<div id="navbar_menu" class="ui secondary pointing menu">
+				<a id="home" class="navbar_menu_item active item" href="/">
+					<i class="home inverted black large icon"></i>
+				</a>
+				<a id="about" class="navbar_menu_item item" href="/about"><b>About</b></a>
+				<a id="resume" class="navbar_menu_item item" href="/resume">Resume</a>
+				<a id="blog" class="navbar_menu_item item" href="/blog">Blog</a>
+				<div class="right menu">
+					<a class="item" href="mailto:abdulkhaliqzaheer@gmail.com" title="mailto:abdulkhaliqzaheer@gmail.com">
+						<i class="mail square inverted blue large icon"></i>
+					</a>
+					<a class="item" href="https://github.com/abdulbeard">
+						<i class="github square inverted green large icon"></i>
+					</a>
+				</div>
+			</div>
+			<div class="ui centered grid">
+				<div class="ui content">
 
-		{{ content }}
+					{{ content }}
 
-	</div>
-	<!-- /.container -->
-	<footer>
-		<!--<ul>
-			<li><a href="mailto:abdulkhaliqzaheer@gmail.com">Email me</a></li>
-			<li><a href="https://github.com/abdulbeard">Github</a></li>
-		</ul>-->
-	</footer>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="ui horizontal list">
+				<div class="item">
+					<div class="content">
+						<a href="mailto:abdulkhaliqzaheer@gmail.com">Email me</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="content">
+						<a href="https://github.com/abdulbeard">Github</a>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
 	<div id="navbarlocation" style="display:none" text="{{ page.navbarlocation }}">{{ page.navbarlocation }}</div>
 </body>
 
 </html>
 <script>
-	$(document).ready(function(){
+	$(document).ready(function () {
 		var currLocation = $('#navbarlocation').text();
-		var activeItem = $('#'+currLocation);
+		var activeItem = $('#' + currLocation);
 		$(activeItem).addClass('active');
 		$('.navbar_menu_item').not(activeItem).removeClass('active');
 	});
