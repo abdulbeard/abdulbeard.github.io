@@ -3,12 +3,58 @@ layout: default
 title: Projects
 navbarlocation: projects
 ---
-<h1>This is projects</h1>
-<div><a href="/projects/weather-monitor">Weather Monitor</a></div>
-<div><a href="/projects/curious-george">Curious George</a></div>
-<div><a href="/projects/eip-scatter-gather">EIP Scatter-Gather</a></div>
-<div><a href="/projects/funcy">Funcy</a></div>
-<div><a href="/projects/mistur-tee">Mistur Tee</a></div>
-<div><a href="/projects/receipto">Receipto</a></div>
-<div><a href="/projects/tplink-smart-bulb-controller">TPLink Smartbulb Controller</a></div>
-<div><a href="/projects/usa-zipcodes">USA Zipcodes</a></div>
+
+<div class="ui blue link cards">
+    {% for proj in site.data.project %}
+    <div class="project card" uri="{{proj.Uri}}">
+        <div class="content" onclick="navigateToProject(this, event)">
+            <div class="right floated meta">
+                <a class="ui icon button" href="{{proj.Uri}}">
+                    <i class="hand point right outline icon"></i>
+                </a>
+            </div>
+            <img class="ui left floated avatar image" src="https://github.com/abdulbeard.png"><h2>{{proj.Name}}</h2>
+        </div>
+        {% if proj.Image != "" %}
+        <div class="image" onclick="navigateToProject(this, event)">
+            <img src="{{proj.Image}}">
+        </div>
+        {% else %}
+        <div class="text content" onclick="navigateToProject(this, event)">
+            <p>
+                the quick brown fox jumped over the lazy dog
+                the quick brown fox jumped over the lazy dog
+                the quick brown fox jumped over the lazy dog
+                the quick brown fox jumped over the lazy dog
+            </p>
+        </div>
+        {% endif %}
+        <div class="content">
+            <div class="ui labels">
+                {% for label in proj.Labels %}
+                <div class="ui tiny black label">{{label}}</div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="extra content">
+            <a class="ui icon button" href="https://github.com/abdulbeard/{{proj.Github}}" target="__blank" data-inverted data-tooltip="Github Repo">
+                <i class="github square inverted green large icon"></i>
+            </a>
+            {% if proj.Nuget != "" %}
+            <a class="ui tiny button" data-inverted data-tooltip="Nuget Package">
+                <img src="https://www.nuget.org/Content/gallery/img/default-package-icon.svg">
+            </a>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<br/><br/><br/>
+
+<script type="text/javascript">
+    function navigateToProject(athis, event) {
+        var uri = event.target.parentElement.getAttribute("uri");
+        window.location = uri;
+        return false;
+    }
+</script>

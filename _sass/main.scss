@@ -76,3 +76,15 @@ ul.posts {
         list-style: none;
     }
 }
+
+/* projects  */
+.project.card {
+    background-color: lightsteelblue !important;
+    .ui.black.label {
+        font-weight: normal;
+    }
+    .text.content p{
+        text-overflow: ellipsis;
+        max-width: 25ch;
+    }
+}

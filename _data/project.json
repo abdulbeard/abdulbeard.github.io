@@ -1,0 +1,58 @@
+[
+    {
+        "Name": "Curious George",
+        "Github": "monkey_testing",
+        "Uri": "curious-george",
+        "Image": "https://raw.githubusercontent.com/abdulbeard/monkey_testing/master/Curious_George.png",
+        "Labels": ["Testing", "XUnit", "NUnit", "MSTest", "Monkey Testing", "Code Quality", "C#", ".NET"],
+        "Nuget": "https://www.nuget.org/packages/CuriousGeorge"
+    },
+    {
+        "Name": "EIP Scatter Gather",
+        "Github": "EIP_ScatterGather",
+        "Uri": "eip-scatter-gather",
+        "Image": "",
+        "Labels": ["C#", ".NET", "Enterprise Integration Patterns", "Fork Join", "Scatter Gather"],
+        "Nuget": ""
+    },
+    {
+        "Name": "Funcy",
+        "Github": "funcy",
+        "Uri": "funcy",
+        "Image": "",
+        "Labels": ["C#", ".NET"],
+        "Nuget": ""
+    },
+    {
+        "Name": "Mistur Tee",
+        "Github": "aspnet-core-webapi-auth-middleware",
+        "Uri": "mistur-tee",
+        "Image": "https://raw.githubusercontent.com/abdulbeard/aspnet-core-webapi-auth-middleware/master/icon.jpg",
+        "Labels": ["C#", ".NET"],
+        "Nuget": "https://www.nuget.org/packages/MisturTee"
+    },
+    {
+        "Name": "TPLink Smart Bulb Controller",
+        "Github": "TPLink_LB130_Controller",
+        "Uri": "tplink-smart-bulb-controller",
+        "Image": "",
+        "Labels": ["C#", ".NET"],
+        "Nuget": ""
+    },
+    {
+        "Name": "USA Zipcodes",
+        "Github": "usa_zipcodes",
+        "Uri": "usa-zipcodes",
+        "Image": "",
+        "Labels": ["C#", ".NET"],
+        "Nuget": ""
+    },
+    {
+        "Name": "Weather Monitor",
+        "Github": "weather-monitor",
+        "Uri": "weather-monitor",
+        "Image": "",
+        "Labels": ["C#", ".NET"],
+        "Nuget": ""
+    }
+]
