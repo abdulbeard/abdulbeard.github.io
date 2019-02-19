@@ -54,7 +54,12 @@ navbarlocation: projects
 <script type="text/javascript">
     function navigateToProject(athis, event) {
         var uri = event.target.parentElement.getAttribute("uri");
-        window.location = uri;
+        if (!uri) {
+            uri = event.target.parentElement.parentElement.getAttribute("uri");
+        }
+        if (uri) {
+            window.location = uri;
+        }
         return false;
     }
 </script>

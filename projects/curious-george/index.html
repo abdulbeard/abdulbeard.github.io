@@ -4,3 +4,19 @@ title: Curious George
 navbarlocation: projects
 ---
 <h1>This is {{ page.title }}</h1>
+<div class="problem">
+    <h3>Problem</h3>
+    <p></p>
+</div>
+<div class="solutions">
+    <h3>Solutions</h3>
+    <p></p>
+</div>
+<div class="this-solution">
+    <h3>Where {{page.title}} comes in</h3>
+    <p></p>
+</div>
+<div>
+    {% include_relative index.md %}
+</div>
+
