@@ -131,7 +131,13 @@ It uses [AutoFixture](https://github.com/AutoFixture/AutoFixture) for creating r
         <td> null </td>
         <td> default(string) </td>
         <td>string.Empty</td>
-        <td><a href="https://github.com/abdulbeard/monkey_testing/blob/c3337a3240fae6e4fca573f24f968cc5195b4f83/MonkeyTesting/DataVariationsByType.cs#L135" target=__blank>GetStringMax()</a>
+        <td class="selectable">
+            <a 
+                href="https://github.com/abdulbeard/monkey_testing/blob/c3337a3240fae6e4fca573f24f968cc5195b4f83/MonkeyTesting/DataVariationsByType.cs#L135" 
+                target=__blank>
+                GetStringMax()
+            </a>
+        </td>
     </tr>
         <tr>
         <td>decimal</td>
