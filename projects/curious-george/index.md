@@ -31,7 +31,7 @@ Curious George uses reflection to figure out the types of arguments for the func
 
 It uses [AutoFixture](https://github.com/AutoFixture/AutoFixture) for creating random instances of user-defined classes. Here's a table that sheds more light on the types of values generated for different types:
 
-<table class="ui celled striped table">
+<table class="ui mobile tablet stackable celled striped table">
   <thead>
     <tr>
         <th>Types</th>
@@ -131,10 +131,10 @@ It uses [AutoFixture](https://github.com/AutoFixture/AutoFixture) for creating r
         <td> null </td>
         <td> default(string) </td>
         <td>string.Empty</td>
-        <td class="selectable">
+        <td class="selectable positive">
             <a 
                 href="https://github.com/abdulbeard/monkey_testing/blob/c3337a3240fae6e4fca573f24f968cc5195b4f83/MonkeyTesting/DataVariationsByType.cs#L135" 
-                target=__blank>
+                target="__blank">
                 GetStringMax()
             </a>
         </td>
