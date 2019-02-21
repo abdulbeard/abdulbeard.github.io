@@ -30,6 +30,7 @@ Curious George uses reflection to figure out the types of arguments for the func
 * Max
 
 It uses [AutoFixture](https://github.com/AutoFixture/AutoFixture) for creating random instances of user-defined classes. Here's a table that sheds more light on the types of values generated for different types:
+
 <table class="ui celled striped table">
   <thead>
     <tr>
@@ -130,8 +131,22 @@ It uses [AutoFixture](https://github.com/AutoFixture/AutoFixture) for creating r
         <td> null </td>
         <td> default(string) </td>
         <td>string.Empty</td>
-        <td>[GetStringMax()]
-    </tr>    
+        <td><a href="https://github.com/abdulbeard/monkey_testing/blob/c3337a3240fae6e4fca573f24f968cc5195b4f83/MonkeyTesting/DataVariationsByType.cs#L135" target=__blank>GetStringMax()</a>
+    </tr>
+        <tr>
+        <td>decimal</td>
+        <td> 0.0M </td>
+        <td> default(decimal) </td>
+        <td>decimal.MinValue</td>
+        <td>decimal.MaxValue</td>
+    </tr>
+    <tr>
+        <td>DateTime</td>
+        <td> DateTime.MinValue </td>
+        <td> default(DateTime) </td>
+        <td>DateTime.MinValue</td>
+        <td>DateTime.MaxValue</td>
+    </tr>
   </tbody>
 </table>
 
