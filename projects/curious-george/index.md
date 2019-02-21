@@ -30,35 +30,110 @@ Curious George uses reflection to figure out the types of arguments for the func
 * Max
 
 It uses [AutoFixture](https://github.com/AutoFixture/AutoFixture) for creating random instances of user-defined classes. Here's a table that sheds more light on the types of values generated for different types:
-| Types        | Null          | Default       | Min           | Max       |
-| ------------- |:-------------:|:-------------:|:-------------:|:-------------:|
-| byte           | 0 | default(byte) |byte.MinValue|byte.MaxValue|
-| sbyte           | 0 | default(sbyte) |sbyte.MinValue|sbyte.MaxValue|
-| int           | 0 | default(int) |int.MinValue|int.MaxValue|
-| uint           | 0 | default(uint) |uint.MinValue|uint.MaxValue|
-| short           | 0 | default(short) |short.MinValue|short.MaxValue|
-| ushort           | 0 | default(ushort) |ushort.MinValue|ushort.MaxValue|
-| long           | 0 | default(long) |long.MinValue|long.MaxValue|
-| ulong           | 0 | default(ulong) |ulong.MinValue|ulong.MaxValue|
-| float           | 0.0f | default(float) |float.MinValue|float.MaxValue|
-| double           | 0.0d | default(double) |double.MinValue|double.MaxValue|
-| char           | '\0' | default(char) |char.MinValue|char.MaxValue|
-| bool           | false | default(bool) |false|false|
-| string           | null | default(string) |string.Empty|[GetStringMax()](https://github.com/abdulbeard/monkey_testing/blob/c3337a3240fae6e4fca573f24f968cc5195b4f83/MonkeyTesting/DataVariationsByType.cs#L135)|
-| decimal           | 0.0M | default(decimal) |decimal.MinValue|decimal.MaxValue|
-| DateTime           | DateTime.MinValue | default(DateTime) |DateTime.MinValue|DateTime.MaxValue|
-
-<br/>
-
-| Rating    | Security            | Explanation                             |
-|-----------|---------------------|-----------------------------------------|
-| Excellent | Very secure         | Criteria is met optimal                 |
-| High      | Secure              | Criteria is met                         |
-| Mid       | Insufficient secure | Criteria is met partly                  |
-| Low       | Insecure            | Criteria is no met                      |
-| N/A       | Not rated           | Criteria is not available or irrelevant |
-
-<br/>
+<table class="ui celled striped table">
+  <thead>
+    <tr>
+        <th>Types</th>
+        <th>Null</th>
+        <th>Default</th>
+        <th>Min</th>
+        <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>byte</td>
+        <td> 0 </td>
+        <td> default(byte) </td>
+        <td>byte.MinValue</td>
+        <td>byte.MaxValue</td>
+    </tr>
+    <tr>
+        <td>sbyte</td>
+        <td> 0 </td>
+        <td> default(sbyte) </td>
+        <td>sbyte.MinValue</td>
+        <td>sbyte.MaxValue</td>
+    </tr>
+    <tr>
+        <td>int</td>
+        <td> 0 </td>
+        <td> default(int) </td>
+        <td>int.MinValue</td>
+        <td>int.MaxValue</td>
+    </tr>
+    <tr>
+        <td>uint</td>
+        <td> 0 </td>
+        <td> default(uint) </td>
+        <td>uint.MinValue</td>
+        <td>uint.MaxValue</td>
+    </tr>
+    <tr>
+        <td>short</td>
+        <td> 0 </td>
+        <td> default(short) </td>
+        <td>short.MinValue</td>
+        <td>short.MaxValue</td>
+    </tr>
+    <tr>
+        <td>ushort</td>
+        <td> 0 </td>
+        <td> default(ushort) </td>
+        <td>ushort.MinValue</td>
+        <td>ushort.MaxValue</td>
+    </tr>
+    <tr>
+        <td>long</td>
+        <td> 0 </td>
+        <td> default(long) </td>
+        <td>long.MinValue</td>
+        <td>long.MaxValue</td>
+    </tr>
+    <tr>
+        <td>ulong</td>
+        <td> 0 </td>
+        <td> default(ulong) </td>
+        <td>ulong.MinValue</td>
+        <td>ulong.MaxValue</td>
+    </tr>
+    <tr>
+        <td>float</td>
+        <td> 0.0f </td>
+        <td> default(float) </td>
+        <td>float.MinValue</td>
+        <td>float.MaxValue</td>
+    </tr>
+    <tr>
+        <td>double</td>
+        <td> 0.0d </td>
+        <td> default(double) </td>
+        <td>double.MinValue</td>
+        <td>double.MaxValue</td>
+    </tr>
+    <tr>
+        <td>char</td>
+        <td> '\0' </td>
+        <td> default(char) </td>
+        <td>char.MinValue</td>
+        <td>char.MaxValue</td>
+    </tr>
+    <tr>
+        <td>bool</td>
+        <td> false </td>
+        <td> default(bool) </td>
+        <td>false</td>
+        <td>false</td>
+    </tr>
+    <tr>
+        <td>string</td>
+        <td> null </td>
+        <td> default(string) </td>
+        <td>string.Empty</td>
+        <td>[GetStringMax()]
+    </tr>    
+  </tbody>
+</table>
 
 In addition to that, where it finds lists/enumerables, it tries to make null, and empty versions of them to trigger any hidden null reference exceptions, or list length assumptions.
 
@@ -76,47 +151,3 @@ Since int is a [value type](https://docs.microsoft.com/en-us/dotnet/csharp/langu
 CuriousGeorge will make sure that the result set returned is distinct, and that any given result set is never repeated - which brings the total number of combinations down to 27 (3 x 3 x 3 = 27).
 `allPossibleCombinations` is the last argument for the monkey test dataset creation.
 
-<table class="ui celled striped table">
-  <thead>
-    <tr><th colspan="3">
-      Git Repository
-    </th>
-  </tr></thead>
-  <tbody>
-    <tr>
-      <td class="collapsing">
-        <i class="folder icon"></i> node_modules
-      </td>
-      <td>Initial commit</td>
-      <td class="right aligned collapsing">10 hours ago</td>
-    </tr>
-    <tr>
-      <td>
-        <i class="folder icon"></i> test
-      </td>
-      <td>Initial commit</td>
-      <td class="right aligned">10 hours ago</td>
-    </tr>
-    <tr>
-      <td>
-        <i class="folder icon"></i> build
-      </td>
-      <td>Initial commit</td>
-      <td class="right aligned">10 hours ago</td>
-    </tr>
-    <tr>
-      <td>
-        <i class="file outline icon"></i> package.json
-      </td>
-      <td>Initial commit</td>
-      <td class="right aligned">10 hours ago</td>
-    </tr>
-    <tr>
-      <td>
-        <i class="file outline icon"></i> Gruntfile.js
-      </td>
-      <td>Initial commit</td>
-      <td class="right aligned">10 hours ago</td>
-    </tr>
-  </tbody>
-</table>
