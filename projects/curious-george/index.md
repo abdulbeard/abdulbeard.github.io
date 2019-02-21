@@ -48,6 +48,18 @@ It uses [AutoFixture](https://github.com/AutoFixture/AutoFixture) for creating r
 | decimal           | 0.0M | default(decimal) |decimal.MinValue|decimal.MaxValue|
 | DateTime           | DateTime.MinValue | default(DateTime) |DateTime.MinValue|DateTime.MaxValue|
 
+<br/>
+
+| Rating    | Security            | Explanation                             |
+|-----------|---------------------|-----------------------------------------|
+| Excellent | Very secure         | Criteria is met optimal                 |
+| High      | Secure              | Criteria is met                         |
+| Mid       | Insufficient secure | Criteria is met partly                  |
+| Low       | Insecure            | Criteria is no met                      |
+| N/A       | Not rated           | Criteria is not available or irrelevant |
+
+<br/>
+
 In addition to that, where it finds lists/enumerables, it tries to make null, and empty versions of them to trigger any hidden null reference exceptions, or list length assumptions.
 
 ## All Possible Combinations
