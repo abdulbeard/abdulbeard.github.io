@@ -75,3 +75,48 @@ Now for a function like `FunctionToTest1(int a, int b, int c)` which takes in th
 Since int is a [value type](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value-types), the Null and Default values for it are both `0`. 
 CuriousGeorge will make sure that the result set returned is distinct, and that any given result set is never repeated - which brings the total number of combinations down to 27 (3 x 3 x 3 = 27).
 `allPossibleCombinations` is the last argument for the monkey test dataset creation.
+
+<table class="ui celled striped table">
+  <thead>
+    <tr><th colspan="3">
+      Git Repository
+    </th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td class="collapsing">
+        <i class="folder icon"></i> node_modules
+      </td>
+      <td>Initial commit</td>
+      <td class="right aligned collapsing">10 hours ago</td>
+    </tr>
+    <tr>
+      <td>
+        <i class="folder icon"></i> test
+      </td>
+      <td>Initial commit</td>
+      <td class="right aligned">10 hours ago</td>
+    </tr>
+    <tr>
+      <td>
+        <i class="folder icon"></i> build
+      </td>
+      <td>Initial commit</td>
+      <td class="right aligned">10 hours ago</td>
+    </tr>
+    <tr>
+      <td>
+        <i class="file outline icon"></i> package.json
+      </td>
+      <td>Initial commit</td>
+      <td class="right aligned">10 hours ago</td>
+    </tr>
+    <tr>
+      <td>
+        <i class="file outline icon"></i> Gruntfile.js
+      </td>
+      <td>Initial commit</td>
+      <td class="right aligned">10 hours ago</td>
+    </tr>
+  </tbody>
+</table>
