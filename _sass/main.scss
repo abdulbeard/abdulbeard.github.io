@@ -88,3 +88,9 @@ ul.posts {
         max-width: 25ch;
     }
 }
+
+blockquote {
+    border-left: 5px solid navy;
+    padding-left: 1em;
+    background: rgba(0,0,0,0.05);
+}
