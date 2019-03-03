@@ -65,10 +65,26 @@
 
 </html>
 <script>
+	function handleMobileVisibility() {
+		window.isMobile = window.innerWidth < 500;
+		if (window.isMobile) {
+			$('.mobile').show();
+			$('.nonMobile').hide();
+		}
+		else {
+			$('.mobile').hide();
+			$('.nonMobile').show();
+		}
+	}
+	$(window).resize(() => {
+		handleMobileVisibility();
+		console.log(window.innerWidth, window.isMobile);
+	});
 	$(document).ready(function () {
 		var currLocation = $('#navbarlocation').text();
 		var activeItem = $('#' + currLocation);
 		$(activeItem).addClass('active');
 		$('.navbar_menu_item').not(activeItem).removeClass('active');
-	});
+		handleMobileVisibility();
+	});	
 </script>

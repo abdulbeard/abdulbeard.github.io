@@ -31,13 +31,45 @@ body {
 /*  About page  */
 .namedIntro {
     font-family: 'Alex Brush', cursive;
+    color: white;
+    background-color: rgba(0,0,0,0.45) !important;
+    & h1 {
+        font-weight: 200;
+        font-size: 4em;
+    }
 }
 
 .desc {
-
+    background-color: rgba(0,0,0,0.1) !important;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.25px;
+    word-spacing: .05em;
 }
 
+.ui.feed {
+    & .event {
+        & .content {
+            & .extra.text {
+                border-color: blue !important;
+            }
+        }
+    }
+}
 
+// .timeline.segment {
+//     background-color: transparent !important;
+//     box-shadow: unset !important;
+//     & .column {
+//         & .card.right {
+//             float: right;
+//             margin-bottom: 10px !important;
+//         }
+//         & .card.left {
+//             margin-bottom: 10px !important;
+//         }
+//     }
+// }
 
 
 
@@ -82,10 +114,10 @@ nav ul {
     border-color: rgba(0, 0, 0, 1) !important;
     color: rgba(0, 0, 0, 1) !important;
 }
-h1 {
-    font-size: 3em;
-    font-family:'Consolas', 'Helvetica', 'Arial', 'Sans-Serif' !important;
-}
+// h1 {
+//     font-size: 3em;
+//     font-family:'Consolas', 'Helvetica', 'Arial', 'Sans-Serif' !important;
+// }
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;

@@ -4,120 +4,46 @@ title: About
 navbarlocation: about
 ---
 <div class="ui raised segment namedIntro">
-	<h1>I am Abdul Khaliq Zaheer</h1>
+	<div class="ui small circular image">
+		<img src="/assets/profile_pic.jpg" />
+	</div>
+	<h1>Abdul Khaliq Zaheer</h1>
 </div>
 <div class="ui raises segment desc">
-	<p>I work as a software engineer, and have been known to resemble an unmitigated pun-artist.</p>
+	<p>I work as a software engineer, and have been known to resemble a pun-toting, unmitigated punman. Always locked and loaded.</p>
+	<p>I enjoy solving problems. More than implementing the solution. But the implementation has it's own pleasure.
+		<p>And I've come to cultivate that side of myself, and even come to terms with being proud of it.</p>
+	</p>
+	<p>Here's a feed of me, and things me.</p>
 </div>
-
-
-
-<div style="position:relative;">
-	<div class="ui segment">
-		<div class="ui two column very relaxed grid">
-			<div class="column">
-				<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-					detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-				<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-					detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-				<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-					detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-				<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-					detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-					<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-							detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-			</div>
-			<div class="column">
-				<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-					detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-				<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-					detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-				<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-					detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-				<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-					detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-			</div>
-		</div>
-		<div class="ui vertical divider">
-			and
-		</div>
+<br/><br/>
+<div class="ui feed">
+	{% for proj in site.data.about_timeline %}
+	<div class="ui horizontal divider">
+		{{proj.Year}}
 	</div>
-</div>
-<div style="position:relative;">
-		<div class="ui segment">
-			<div class="ui two column very relaxed grid">
-				<div class="column">
-					<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-						detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-					<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-						detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-					<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-						detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-					<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-						detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-						<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-								detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-				</div>
-				<div class="column">
-					<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-						detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-					<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-						detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-					<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-						detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-					<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-						detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+	{% for item in proj.Data %}
+	<div class="event">
+		<div class="label">
+			<img src="/assets/profile_pic.jpg">
+		</div>
+		<div class="content">
+			<div class="summary">
+				{{item.Summary}}
+				<div class="date">
+					{{item.Date}}
 				</div>
 			</div>
-			<div class="ui vertical divider">
-				and
+			<div class="extra text">
+				{{item.Content}}
+			</div>
+			<div class="meta">
+				<a class="like">
+					<i class="like icon"></i> 5 Likes
+				</a>
 			</div>
 		</div>
 	</div>
-
-
-
-<div class="timeline">
-	<div class="container left">
-		<div class="content">
-			<h2>2017</h2>
-			<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-				detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-		</div>
-	</div>
-	<div class="container right">
-		<div class="content">
-			<h2>2016</h2>
-			<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-				detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-		</div>
-	</div>
-	<div class="container left">
-		<div class="content">
-			<h2>2015</h2>
-			<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-				detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-		</div>
-	</div>
-	<div class="container right">
-		<div class="content">
-			<h2>2012</h2>
-			<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-				detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-		</div>
-	</div>
-	<div class="container left">
-		<div class="content">
-			<h2>2011</h2>
-			<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-				detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-		</div>
-	</div>
-	<div class="container right">
-		<div class="content">
-			<h2>2007</h2>
-			<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-				detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-		</div>
-	</div>
+	{% endfor %}
+	{% endfor %}
 </div>
