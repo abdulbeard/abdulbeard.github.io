@@ -3,10 +3,35 @@
         "Year": 1990,
         "Data": [
             {
-                "Summary": "Nolo",
-                "Date": "February 15",
-                "Content": "<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazimfierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>"
+                "Summary": "Birth and abrupt arrival",
+                "Date": "June 09",
+                "Content": "<p>Born to Pakistani parents while living abroad in Michigan. The husband working on a Masters/PhD program in Mining Engineering, soon to return to Lahore, Pakistan</p>"
             }
         ]
-    }    
+    },
+    {
+        "Year": 1993,
+        "Data": [
+            {
+                "Summary": "Cracked my head open",
+                "Date": "Sometime",
+                "Content": "<p>Slipped and fell while taking a bath, and hit my head on the edge of a marble block, and cut my scalp open. Needed a few stitches for that. This was the beginning of my injury adventures, I'm told.</p>"
+            }
+        ]
+    },
+    {
+        "Year": 1994,
+        "Data": [
+            {
+                "Summary": "Grandpa and Punjabi",
+                "Date": "All year",
+                "Content": "<p>Remember spending time with my paternal grandfather, while he would <a href='https://www.youtube.com/watch?v=2I95pe2QXEM' target='__blank'>weave a charpai.</a> It was during this time that I learned Punjabi while chatting with him for hours, and got much better at it than my siblings. Also the age I learned to stand on his back and 'massage' him with my body-weight.</p>"
+            },
+            {
+                "Summary": "Pneumonia",
+                "Date": "Summer",
+                "Content": "Contracted pneumonia because I fell asleep on a charpai infront of an <a href='https://en.wikipedia.org/wiki/Evaporative_cooler' target='__blank'>evaporative cooler</a> in the summer."
+            }
+        ]
+    }
 ]

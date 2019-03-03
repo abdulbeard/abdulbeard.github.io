@@ -59,11 +59,25 @@ body {
 }
 
 .ui.feed {
+    font-family: 'Raleway', sans-serif;
     & .event {
+        background-color: rgba(0,0,0,0.1) !important;
+        border-radius: 5px;
         & .content {
+            color: white;
+            & .summary {
+                color: white !important;
+                & .date {
+                    color: white !important;
+                }
+            }
             & .extra.text {
+                color: white;
                 border-color: blue !important;
             }
+        }
+        & a {
+            color: blue;
         }
     }
 }
@@ -130,6 +144,7 @@ nav ul {
 .navbar_menu_item,
 .navbar_menu_item.active {
     color: lightyellow !important;
+    // vertical-align: text-bottom !important;
 }
 
 .ui.secondary.pointing.menu.mainMenu .item.active {
