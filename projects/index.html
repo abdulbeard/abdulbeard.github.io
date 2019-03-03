@@ -32,7 +32,7 @@ navbarlocation: projects
         <div class="content">
             <div class="ui labels">
                 {% for label in proj.Labels %}
-                <div class="ui tiny black label">{{label}}</div>
+                <div class="ui tiny blue label">{{label}}</div>
                 {% endfor %}
             </div>
         </div>
@@ -41,7 +41,7 @@ navbarlocation: projects
                 <i class="github square inverted green large icon"></i>
             </a>
             {% if proj.Nuget != "" %}
-            <a class="ui tiny button" data-inverted data-tooltip="Nuget Package">
+            <a class="ui tiny button" data-inverted data-tooltip="Nuget Package" href="{{proj.Nuget}}" target="__blank">
                 <img src="https://www.nuget.org/Content/gallery/img/default-package-icon.svg">
             </a>
             {% endif %}
@@ -74,7 +74,7 @@ navbarlocation: projects
         color: red !important;
     }
 
-    .ui.secondary.pointing.menu .item.active {
+    .ui.secondary.pointing.menu.mainMenu .item.active {
         color: red !important;
         border-color: red !important;
     }
@@ -84,9 +84,7 @@ navbarlocation: projects
     }
 
     body {
-        background-image: url("https://image.freepik.com/free-vector/brick-texture-background_1035-2260.jpg") !important;
-        background-size: cover;
-        background-blend-mode: color;
-        background-color: rgba(238, 238, 238, 0.1);
+        background-image: url("/assets/projects_background.jpg") !important;
+        background-color: rgba(238, 238, 238, 0.1) !important;
     }
 </style>

@@ -20,15 +20,42 @@
 <body>
 	<div class="bodyContent">
 		<div class="nonfooter-wrapper">
-			<div id="navbar_menu" class="ui secondary pointing menu">
+			<div id="navbar_menu" class="ui secondary pointing menu mainMenu nonMobile">
 				<a id="home" class="navbar_menu_item active item" href="/">
 					<i class="home inverted black large icon"></i>
 				</a>
-				<a id="about" class="navbar_menu_item item" href="/about"><b>About</b></a>
+				<a id="about" class="navbar_menu_item item" href="/about">About</a>
 				<a id="resume" class="navbar_menu_item item" href="/resume">Resume</a>
 				<a id="blog" class="navbar_menu_item item" href="/blog">Blog</a>
 				<a id="projects" class="navbar_menu_item item" href="/projects">Projects</a>
 				<div class="right menu">
+					<a class="item avatar" href="/about">
+						<div class="ui circular bordered image">
+							<img src="/assets/profile_pic.jpg" />
+						</div>
+					</a>
+					<a class="item" href="mailto:abdulkhaliqzaheer@gmail.com" title="mailto:abdulkhaliqzaheer@gmail.com">
+						<i class="mail square inverted blue large icon"></i>
+					</a>
+					<a class="item" href="https://github.com/abdulbeard" target="__blank">
+						<i class="github square inverted green large icon"></i>
+					</a>
+				</div>
+			</div>
+			<div id="navbar_menu" class="ui secondary pointing menu mainMenu mobile">
+				<a id="home_mbl" class="navbar_menu_item active item" href="/">
+					<i class="home inverted black large icon"></i>
+				</a>
+				<a id="about_mbl" class="navbar_menu_item item" href="/about"><i class="info circle icon"></i></a>
+				<a id="resume_mbl" class="navbar_menu_item item" href="/resume"><i class="file alternate icon"></i></a>
+				<a id="blog_mbl" class="navbar_menu_item item" href="/blog"><i class="edit icon"></i></a>
+				<a id="projects_mbl" class="navbar_menu_item item" href="/projects"><i class="code icon"></i></a>
+				<div class="right menu">
+					<a class="item avatar" href="/about">
+						<div class="ui circular bordered image">
+							<img src="/assets/profile_pic.jpg" />
+						</div>
+					</a>
 					<a class="item" href="mailto:abdulkhaliqzaheer@gmail.com" title="mailto:abdulkhaliqzaheer@gmail.com">
 						<i class="mail square inverted blue large icon"></i>
 					</a>
@@ -75,16 +102,17 @@
 			$('.mobile').hide();
 			$('.nonMobile').show();
 		}
+		console.log(window.innerWidth, window.isMobile);
 	}
 	$(window).resize(() => {
 		handleMobileVisibility();
-		console.log(window.innerWidth, window.isMobile);
 	});
 	$(document).ready(function () {
-		var currLocation = $('#navbarlocation').text();
-		var activeItem = $('#' + currLocation);
+		handleMobileVisibility();var currLocation = $('#navbarlocation').text();
+
+		var selector = '#' + currLocation + (window.isMobile ? "_mbl" : "")
+		var activeItem = $(selector);
 		$(activeItem).addClass('active');
-		$('.navbar_menu_item').not(activeItem).removeClass('active');
-		handleMobileVisibility();
+		$('.navbar_menu_item').not(activeItem).removeClass('active');		
 	});	
 </script>

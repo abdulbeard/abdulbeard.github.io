@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Alex+Brush|Raleway:100,400');
 
 body {
-    background-image: url("/background.jpg") !important;
+    // background-image: url("/background.jpg") !important;
+    background-image: url("https://image.freepik.com/free-vector/blue-background-texture-beautiful-modern-art-abstract-design_1035-11590.jpg") !important;
+	// background-color: rgba(238,238,238, 0.4) !important;
+	// background-blend-mode: color !important;
+	background-size: cover !important;
     // margin: 20px auto !important;
     width: 100%;
     font-size: 2rem;
 }
 
 /*      Main index page      */
+.ui.segment.welcomeToWebsite {
+    background-color: rgba(256,256,256,0.3) !important;
+}
+.ui.green.raised.segment.whatIDo {
+    background-color: rgba(0,0,0,0.3) !important;
+    color: white;
+}
 .whatIDo, .welcomeToWebsite {
     & p {
         text-align: left;
@@ -104,9 +115,49 @@ nav ul {
     }
 }
 
-.ui.secondary.pointing.menu .right.menu .item{
-    padding:inherit; 
+.ui.secondary.pointing.menu.mainMenu {
+    background-color: rgba(0,0,0,0.2);
+    color: lightyellow !important;
+    &.mobile {
+        margin-top: unset;
+    }
+}
+.navbar_menu {
+    color: lightyellow !important;
+    border-color: lightyellow !important;
+}
+
+.navbar_menu_item,
+.navbar_menu_item.active {
+    color: lightyellow !important;
+}
+
+.ui.secondary.pointing.menu.mainMenu .item.active {
+    color: lightyellow !important;
+    border-color: lightyellow !important;
+}
+
+.navbar_menu_item i.inverted.black.icon {
+    color: lightyellow !important;
+}
+
+.ui.secondary.pointing.menu.mainMenu .right.menu .item{
+    padding:inherit;
     padding-top:0.5em;
+}
+
+.ui.secondary.pointing.menu.mainMenu.mobile .right.menu .item.avatar {
+    & img {
+        width: 25px;
+        margin-right: 10px;
+    }
+}
+
+.ui.secondary.pointing.menu.mainMenu.nonMobile .right.menu .item.avatar {
+    & img {
+        width: 35px;
+        margin-right: 10px;
+    }
 }
 
 .ui.secondary.pointing.menu > .menu > .item.active, 
@@ -155,7 +206,9 @@ ul.posts {
 
 /* projects  */
 .project.card {
-    background-color: lightsteelblue !important;
+    // background-color: lightsteelblue !important;
+    background-color: rgba(0,0,0,0.6) !important;
+    color: white;
     .ui.black.label {
         font-weight: normal;
     }
