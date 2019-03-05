@@ -13,7 +13,7 @@ body {
 
 /*      Main index page      */
 .ui.segment.welcomeToWebsite {
-    background-color: rgba(256,256,256,0.3) !important;
+    background-color: rgba(0,0,0,0.3) !important;
 }
 .ui.green.raised.segment.whatIDo {
     background-color: rgba(0,0,0,0.3) !important;
@@ -25,6 +25,7 @@ body {
         font-family: 'Raleway', sans-serif;
         line-height: 1.5;
         letter-spacing: 0.25px;
+        color: white;
         word-spacing: .25em;
         &::first-letter {
             font-size: 1.5em;
@@ -54,6 +55,7 @@ body {
     background-color: rgba(0,0,0,0.1) !important;
     font-family: 'Raleway', sans-serif;
     line-height: 1.5;
+    color: white;
     letter-spacing: 0.25px;
     word-spacing: .05em;
 }

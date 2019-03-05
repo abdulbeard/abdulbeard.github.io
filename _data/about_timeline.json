@@ -1,21 +1,51 @@
 [
     {
-        "Year": 1990,
+        "Year": 2009,
         "Data": [
             {
-                "Summary": "Birth and abrupt arrival",
-                "Date": "June 09",
-                "Content": "<p>Born to Pakistani parents while living abroad in Michigan. The husband working on a Masters/PhD program in Mining Engineering, soon to return to Lahore, Pakistan</p>"
+                "Summary": "Emory College",
+                "Date": "Fall",
+                "Content": "<p>The beginning of my return to the US. Came here to study Psychology.</p>"
+            },
+            {
+                "Summary": "First Movie",
+                "Date": "Winter",
+                "Content": "<p>Went to see my first movie in a theater. And in 3D. It was <a href='https://en.wikipedia.org/wiki/Avatar_(2009_film)' target='__blank'>Avatar</a></p>"
             }
         ]
     },
     {
-        "Year": 1993,
+        "Year": 1996,
         "Data": [
             {
-                "Summary": "Cracked my head open",
-                "Date": "Sometime",
-                "Content": "<p>Slipped and fell while taking a bath, and hit my head on the edge of a marble block, and cut my scalp open. Needed a few stitches for that. This was the beginning of my injury adventures, I'm told.</p>"
+                "Summary": "The flood",
+                "Date": "August",
+                "Content": "<p>There were <a href='https://reliefweb.int/report/pakistan/pakistan-floods-information-report-no-1-27-august-1996' target='__blank'>torrential rains</a> in Lahore, Pakistan this month. Our house got flooded and we had to evacuate. Moved to a new house for the first time.</p>"
+            },
+            {
+                "Summary": "Little brother",
+                "Date": "March",
+                "Content": "<p>My younger brother was born, and so ended my reign as the youngest in the family. I also experienced a loss in favor and pampering as a result. Still working on forgiving him for that.</p>"
+            },
+            {
+                "Summary": "School",
+                "Date": "Summer",
+                "Content": "<p>Started school/pre-school this year. Started a grade before 1st. (Nursery)</p>"
+            }
+        ]
+    },
+    {
+        "Year": 1995,
+        "Data": [
+            {
+                "Summary": "First book",
+                "Date": "May",
+                "Content": "<p>My brothers did well in school, and used to come first in their class. The school would give out prizes to the top achievers every year, to encourage kids to do well. And the prizes were generally fiction books for kids to read. My parents took me to one of these prize-giving ceremonies, and I was jealous since I didn't get a book and my brothers did. So my parents bought me my first book: 'The Three Bears'. This was the earliest moment in time I can attribute my addiction for fiction to.</p>"
+            },
+            {
+                "Summary": "Forehead meets bike",
+                "Date": "Late Fall",
+                "Content": "<p>That summer I graduated from the tricycle to the bicycle. Winter was approaching, and my mom had our winter quilts out hanging in the sun, letting them air out and lose their smell. I was having fun riding the bicycle, and imagining the hanging quilts as tunnels, riding 'through' them. One of these times I got overzealous and leaned over my bike too hard, and banged my forehad on the handlebars and cut open my forehead. Didn't even realize what had happened until I felt something cold on my forehead. A hand-swipe later, I discovered blood on my hands and went scrambling inside the house to find my dad. Got stitches for the second time in a short life!</p>"
             }
         ]
     },
@@ -33,5 +63,25 @@
                 "Content": "Contracted pneumonia because I fell asleep on a charpai infront of an <a href='https://en.wikipedia.org/wiki/Evaporative_cooler' target='__blank'>evaporative cooler</a> in the summer."
             }
         ]
-    }
+    },
+    {
+        "Year": 1993,
+        "Data": [
+            {
+                "Summary": "Cracked my head open",
+                "Date": "Sometime",
+                "Content": "<p>Slipped and fell while taking a bath, and hit my head on the edge of a marble block, and cut my scalp open. Needed a few stitches for that. This was the beginning of my injury adventures, I'm told.</p>"
+            }
+        ]
+    },
+    {
+        "Year": 1990,
+        "Data": [
+            {
+                "Summary": "Birth and abrupt arrival",
+                "Date": "June 09",
+                "Content": "<p>Born to Pakistani parents while living abroad in Michigan. The husband working on a Masters/PhD program in Mining Engineering, soon to return to Lahore, Pakistan</p>"
+            }
+        ]
+    }    
 ]
